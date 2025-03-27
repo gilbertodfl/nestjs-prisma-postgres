@@ -57,6 +57,40 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Install prisma
+
+```bash
+npm i -D prisma 
+npx prisma init 
+npm install @prisma/client
+
+### help prisma
+npx prisma --help
+
+```
+## Control version prisma
+
+```bash
+## initialization 
+npx prisma migrate reset 
+## Download schema to source : db --> files
+npx prisma db pull
+## upgrade database 
+npx prisma migrate dev --name Add-birth-at
+
+```
+
+
+## Install class-validator class-transformer
+
+```bash
+npm install class-validator --save
+
+## or :
+npm i class-validator class-transformer 
+
+```
+
 ## Deployment
 
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
